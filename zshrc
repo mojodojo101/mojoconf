@@ -1,4 +1,3 @@
-# Luke's config for the Zoomer Shell
 export ZSH=$HOME/.oh-my-zsh
 
 
