@@ -47,6 +47,10 @@ set background=dark
 "set mouse=a		" Enable mouse usage (all modes)
 set clipboard=unnamed
 set number
+set autoindent
+filetype on
+filetype plugin on
+filetype indent on
 syntax on
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")

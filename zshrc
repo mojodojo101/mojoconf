@@ -1,3 +1,4 @@
+# Luke's config for the Zoomer Shell
 export ZSH=$HOME/.oh-my-zsh
 
 
@@ -31,7 +32,8 @@ _comp_options+=(globdots)		# Include hidden files.
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1
-
+bindkey -v
+bindkey '^R' history-incremental-search-backward
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
