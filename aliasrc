@@ -1,0 +1,19 @@
+#my usual nmap scan
+alias mojonmap="nmap -sC -p- -vv --reason -sV -Pn -sS -O -oN scan1 $ip"
+
+
+#masscan
+alias mojomasscan="masscan -p1-65535,U:1-65535 $ip --rate=1000 -e tun0 -oG scan1-massscan.txt"
+
+#get banners from ports
+alias mojobannergrabber='for i in $(cat openports.txt);do echo "$i:" >> banners.txt; echo -en "GET /\r\n\r\nhelp\r\n\r\n" | timeout 2.0 nc -nv $ip $i >> banners.txt &&  echo -e "\n\n\n">> banners.txt;done'
+
+
+alias mojoportgrabber='grep "open.*" | grep -oE "^[0-9]*"'
+
+
+#ip grep
+alias mojoipgrabber='grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"'
+
+#standard nmap
+alias mojonmap='nmap -sC -p- -vv --reason -sV -Pn -sS -O -oN scan1 $ip'

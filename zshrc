@@ -3,6 +3,8 @@ export ZSH=$HOME/.oh-my-zsh
 
 
 path+=('/root/go/bin')
+path+=('/opt/')
+path+=('/opt/scripts')
 export PATH
 
 LFCD="$GOPATH/src/github.com/gokcehan/lf/etc/lfcd.sh"  # source
