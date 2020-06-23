@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 
-path+=('/root/go/bin')
+path+=($HOME'/go/bin')
 path+=('/opt/')
 path+=('/opt/scripts')
 export PATH
