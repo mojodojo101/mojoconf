@@ -23,7 +23,7 @@ SAVEHIST=10000
 plugins=(git colored-man-pages)
 #powerline-daemon -q
 #. /root/.oh-my-zsh/plugins/powerline/powerline/bindings/zsh/powerline.zsh
-source $ZSH/oh-my-zsh.sh
+
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
